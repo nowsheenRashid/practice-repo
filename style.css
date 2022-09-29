@@ -1,0 +1,8 @@
+#myDiv{
+    width: 200px;
+    height: 200px; 
+    border-radius: 20px;
+    border: 2px solid #974a30;
+    padding: 12px;
+    font-size: 21px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+        <script>
+            var salaries = [30000, 50000, 40000, 80000, 20000];
+            console.log(salaries)
+
+            var total = salaries.reduce(totalSalary);
+            console.log(total);
+            function totalSalary(preval, curval) {
+                return preval + curval;
+            }
+
+
+
+          
+
+            // using prompt//
+            
+
+              var salaries = [];
+            var size = prompt("Enter size ");
+            for (var i = 0; i < size; i++) {
+                var salary = prompt("Enter salary");
+                salaries[i] = parseInt(salary);
+
+            }
+            console.log(salaries);
+
+
+            var total = salaries.reduce(totalSalary);
+            console.log(total);
+
+            function totalSalary(preval, curval) {
+                return preval + curval;
+            }
+
+
+
+        </script>
+</body>
+
+</html>

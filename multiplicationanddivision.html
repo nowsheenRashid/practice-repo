@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ist number:
+    <input type="number" value="" id="number"><br><br>
+    2nd number:
+    <input type="number" value="" id="numbers"><br><br>
+     
+    <input type="button" value="multiply" onclick="myfunction()"><br><br>
+    <input type="button" value="division" onclick="myfunc1()"><br><br>
+     
+    The result is :
+    <div id="result"></div>
+
+    <script>
+        function myfunction(){
+         var x = parseInt (document.getElementById("number").value);
+         var y = parseInt(document.getElementById("numbers").value);
+         document.getElementById('result').innerHTML = x * y;
+        }
+
+        function myfunc1(){
+         var x = parseInt (document.getElementById("number").value);
+         var y = parseInt(document.getElementById("numbers").value);
+         document.getElementById('result').innerHTML = x / y;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     table{
+        border-collapse: collapse;
+        height: 300px;
+        width: 500px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    th, td{
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr,td{
+        /* border: 2px solid black; */
+        text-align: center;
+    
+    }
+    #tb,tr:nth-child(even){
+        background-color: #ebe5e5;
+
+    }
+    #tr,tr:nth-child(odd){
+        background-color: white;
+    }
+</style>
+<body>
+    <form action="UrlparamsDetails.html" method="get">
+        <table id="tb">
+            <tr>
+                <th>Name</th>
+                <th>RollNo</th>
+                <th>Marks</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Arwah</td>
+                <td>101</td>
+                <td>800</td>
+                <td><a href="UrlparamsDetails.html?RollNo=101&Name=Arwah&Marks=800">StudentInformation-</a></td>
+            </tr>
+            <tr>
+                <td>Sana</td>
+                <td>102</td>
+                <td>900</td>
+                <td><a href="UrlparamsDetails.html?RollNo=102&Name=sana&Marks=900">StudentInformation</a></td>
+            </tr>
+            <tr>
+                <td>Talha</td>
+                <td>103</td>
+                <td>700</td>
+                <td><a href="UrlparamsDetails.html?RollNo=103&Name=Talha&Marks=700">StudentInformation</a></td>
+            </tr>
+            <tr>
+                <td>Muiz</td>
+                <td>104</td>
+                <td>900</td>
+                <td><a href="UrlparamsDetails.html?RollNo=104&Name=Muiz&Marks=900">StudentInformation</a></td>
+            </tr>
+            <tr>
+                <td>Ibrahim</td>
+                <td>104</td>
+                <td>900</td>
+                <td><a href="UrlparamsDetails.html?RollNo=104&Name=Ibrahim&Marks=900">StudentInformation</a></td>
+            </tr>
+            
+            </table>
+            </form>
+</body>
+</html>

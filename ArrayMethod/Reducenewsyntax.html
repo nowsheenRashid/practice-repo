@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="reduce()">Click</button>
+    <ol id="myUl"></0l>
+    <button id="btnsec" onclick="show()">show</button>
+    <script>
+        var salaries = [30000,50000,40000,80000,20000];
+        console.log(salaries)
+        function reduce()
+        {
+       
+        var total= salaries.reduce(totalSalary);
+        console.log(total);
+        function totalSalary(preval,curval){
+            return preval + curval;
+         }
+        }
+
+        function show()
+        {
+            var result= document.getElementById("myUl");
+            list= "";
+
+
+            for(var items of salaries){
+                list += ` <li> ${items} </li>`
+            }
+
+            result.innerHTML = list;
+        }
+
+        // using Prompt//
+        var salaries = [];
+var size = prompt("Enter size ");
+for(var i = 0; i < size; i++){
+       var salary= prompt("Enter salary");
+       salaries[i] = parseInt( salary);
+
+}
+console.log(salaries);
+
+function reduce(){
+    var total=salaries.reduce(totalSalary);
+       console.log(total);
+
+ function totalSalary(preval,curval){
+     return preval + curval;
+ }
+
+}
+function show(){
+    var result= document.getElementById("myUl");
+            list= "";
+    for(var items of salaries){
+                list += ` <li> ${items} </li>`
+            }
+
+             result.innerHTML = list;
+
+}
+    </script>
+</body>
+</html>

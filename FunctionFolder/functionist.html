@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtNo" placeholder="Enter number">
+    <input type="text" id="txtNosec" placeholder="Enter number">
+    <input type="text" id="resultDiv" placeholder="Enter number">
+    <button onclick="Add()">+</button>
+    <button onclick="substraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+    <p id="para"></p>
+    <script>
+        var txtNo=document.getElementById("txtNo");
+        var txtNosec=document.getElementById("txtNosec");
+        function Add()
+        {
+            var num1=txtNo.value;
+            var num2=txtNosec.value;
+            document.getElementById("para").innerHTML=parseInt(num1)+parseInt(num2);
+            document.getElementById("resultDiv").value = parseInt(num1)+parseInt(num2);
+
+        }
+        function substraction(){
+             var num1= txtNo.value;
+             var num2 = txtNosec.value;
+             document.getElementById("para").innerHTML = num1 - num2;
+             document.getElementById("resultDiv").value =num1 -num2;
+        }
+        function multiplication(){
+            var num1= txtNo.value;
+             var num2 = txtNosec.value;
+             document.getElementById("para").innerHTML = num1 * num2;
+             document.getElementById("resultDiv").value = num1*num2;
+        }
+        function division(){
+            var num1= txtNo.value;
+             var num2 = txtNosec.value;
+             document.getElementById("para").innerHTML = num1 / num2;
+             document.getElementById("resultDiv").value =num1 /num2;
+        }
+
+        // function Add(){
+        // var txtNo=document.getElementById("txtNo");
+        // var num1=txtNo.value;
+        // var txtNosec=document.getElementById("txtNosec");
+        // var num2=txtNosec.value;
+        // var sum1 = parseInt(num1);
+        // var sum2=parseInt(num2);
+        // var result=sum1+sum2;
+        // console.log(result);
+        //     para.innerHTML="the addition of two numbers is" +result;
+        // }
+
+            
+        //   var valFirst=  document.getElementById("txtNo");
+        //   var result=parseInt (valFirst.value)
+        //   console.log(result);
+        //   var valsecond= document.getElementById("txtNosec");
+        //   var result2= parseInt(valsecond.value)
+        //         console.log(result2)
+        //         var total= result + result2;
+        //         console.log(total);
+        //         return x+y;
+        //
+    
+    //    function add(num1,num2){
+    //     if(num1){
+    //         var num2 ;
+    //         var sum = num1 + num2;
+    //     console.log(sum);
+    //     }
+    //     // var num1 ;
+    //     // var num2  ;
+    //     // var sum = num1 + num2;
+    //     // console.log(sum);
+    //    } 
+    //    add(10,10);
+    </script>
+</body>
+</html>

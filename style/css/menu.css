@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+#logo-header {
+    background-color: grey;
+
+
+}
+
+#imglogo {
+    width: 60px;
+
+
+}
+
+h2 {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+}
+
+p {    display: inline-block;
+    margin-left: 20px;
+    /* position: fixed; */
+    /* margin-top: 30px; */
+    margin-bottom: 29px;
+
+}
+
+.navbar {
+    background-color: #d7f04c;
+    height: 100px;
+    border-radius: 5px;
+    /* margin: 13px 20px; */
+    margin-top: -15px;
+
+}
+
+.nav ul {
+    overflow: auto;
+}
+
+
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+
+
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+
+
+
+}
+
+li a:hover {
+
+    color: blue;
+    text-decoration: underline;
+}
+
+.sd {
+    background-color:grey;
+    width: 20vw;
+    margin-top: -8px;
+
+}
+
+.sd li {
+    background-color: burlywood;
+    display: block;
+    list-style: none;
+    margin: 13px 20px;
+    text-align: center;
+    padding: 6px;
+}
+
+
+.sd li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+  
+}
+
+.sd li {
+    border: 4px solid grey;
+    padding: 12px;
+    margin: 8px;
+    /* margin-top: 12px; */
+
+}
+.mid-img{
+    border: 4px solid black;
+    height: 40vh;
+    width: 70vw;
+}

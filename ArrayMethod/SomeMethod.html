@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<script>
+    // var arrays = [101,102, 103, 104, 105];
+    // console.log(arrays);
+    // var result= arrays.some(isAvailable);
+    // console.log(result);
+    // function isAvailable(value){
+
+    //     return value >= 105
+    // }
+var arrays =[];
+var size = prompt("Enter size");
+for(var i = 0; i < size; i++){
+    var numbers= prompt("Enter array numbers");
+    arrays[i] = numbers;
+}
+console.log(arrays);
+      var result=arrays.some(isAvailable);
+      console.log(result);
+      function  isAvailable(value){
+        return value  >= 108;
+      }
+
+</script>
+</body>
+</html>

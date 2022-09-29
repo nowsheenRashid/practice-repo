@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtNo" placeholder="Enter number">
+    <button id="btn" onclick="someAdd()">AddNumbers</button>
+    <button id="btnsec" onclick="Show()">Show</button>
+    <ol id="mylist"></ol>
+    <script>
+        var arrays = [];
+        console.log(arrays);
+        var txtNo = document.getElementById("txtNo");
+        function someAdd() {
+
+            var val = txtNo.value;
+            arrays.push(val);
+            console.log(arrays);
+
+
+            var result = arrays.some(isAvailable);
+            console.log(result);
+            function isAvailable(value) {
+                return value >= 108;
+            }
+        }
+
+        function Show(){
+          var myList=  document.getElementById("mylist");
+           var list= "";
+           for(var items of arrays){
+            list += `<li> ${items}</li>`
+           }
+
+           myList.innerHTML = list;
+        }
+    </script>
+</body>
+
+</html>

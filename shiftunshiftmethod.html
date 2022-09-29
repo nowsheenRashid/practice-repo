@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="btn" onclick="shiftfun()">Click shift</button>
+    <button type="btn" onclick="unshiftfun()">Click unshift</button>
+    <script>
+        // var arrays = ["Muiz", "Arwah", "Talha", "Ibrahim"];
+        // console.log("Before shift: " + arrays)
+        // arrays.shift();
+        // console.log("After shift: " + arrays);
+
+
+        // user input//
+
+        // var array = [];
+        // var size = prompt("Enter the size of array");
+        // for (var i = 0; i < size; i++) {
+        //     var value = prompt("Enter value of array");
+        //     array[i] = value;
+        // }
+        //     array.shift();
+        //      console.log(array);
+        //     for(var items of array){
+        //         console.log(items)
+        //     }
+        // using function //
+        // var array = [];
+        // var size = prompt("Enter the size of array");
+        // for (var i = 0; i < size; i++) {
+        //     var value = prompt("Enter value of array");
+        //     array[i] = value;
+        //     console.log("Before shift :" +array)
+        // }
+        // function shiftfun() {
+
+        //     array.shift();
+        //     console.log( "After shift"+array);
+        //      for (var items of array) {
+        //          console.log(items)
+        //      }
+        // }
+
+
+
+        //   unshift method
+
+
+        // var arrays = ["Muiz", "Arwah", "Talha", "Ibrahim"];
+        // console.log("Before shift: " + arrays)
+        // arrays.unshift("misba");
+        // console.log("After shift: " + arrays);
+
+
+        // user input
+
+        // var array = [];
+        // var size = prompt("Enter the size of array");
+        // for (var i = 0; i < size; i++) {
+        //     var value = prompt("Enter value of array");
+        //     array[i] = value;
+        // }
+        // array.unshift("misba");
+        // console.log(array);
+        // for (var items of array) {
+        //     console.log(items)
+        // }
+
+
+        /// using function
+
+        var array = [];
+        var size = prompt("Enter the size of array");
+        for (var i = 0; i < size; i++) {
+            var value = prompt("Enter value of array");
+            array[i] = value;
+        }
+        function unshiftfun(){
+            array.unshift("misba");
+        console.log(array);
+        for (var items of array) {
+            console.log(items)
+        }
+        }
+
+    </script>
+</body>
+
+</html>

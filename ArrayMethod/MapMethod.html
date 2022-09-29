@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtNo" placeholder="Enter number">
+    <button id="btn" onclick="mapfunction()">AddMap</button>
+    <button id="btnsec" onclick="show()">Show</button>
+    <ol id="Mylist"></ol>
+
+    <script>
+        var arrays = [1, 2, 3, 4, 5];
+        //    console.log(arrays) ;
+        var result = arrays.map(checkMap);
+        console.log(result);
+        function checkMap(value) {
+            return value * 2;
+        }
+
+        // var arrays = [];
+        // var txtNo = document.getElementById("txtNo");
+        // function mapfunction(){
+        //    var result= txtNo.value
+        //    arrays.push(result);
+        //    console.log(arrays);
+
+        //    var myFun=  arrays.map(myMapFunc);
+        //    console.log(myFun);
+
+        //    function myMapFunc(value){
+        //     return  value * 2
+        //    }
+        // }
+        // function show(){
+        //   var mylist=document.getElementById("Mylist");
+        //   var list = '';
+        //   for(var items of arrays){
+        //     list += `<li>${items} </li>`
+
+        //   }
+        //   mylist.innerHTML = list;
+        // }
+
+
+    </script>
+</body>
+
+</html>

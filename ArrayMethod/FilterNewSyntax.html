@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="Filter()">Filter</button>
+    <button onclick="show()">Display result</button>
+    <ol id="myList"></ol>
+    <script>
+        var salaries = ["20000", "40000", "55000", "70000", "90000"];
+        console.log(salaries);
+        function Filter() {
+            var result = salaries.filter(checkSalary);
+            console.log(result);
+
+          function checkSalary(salary) {
+                return salary >= 50000;
+
+            }
+        }
+        function show() {
+            var myList = document.getElementById("myList");
+            var list = " ";
+
+            for (var items of salaries) {
+                list += `<li>${items} </li>`
+            }
+            myList.innerHTML = list;
+        }
+
+
+        // Using prompt filter method
+
+        // var salaries = [];
+
+        // function Filter() {
+
+
+
+        //     var size = prompt("Enter size ");
+        //     for (var i = 0; i < size; i++) {
+        //         var salary = prompt("Enter salary");
+        //         salaries[i] = parseInt(salary);
+
+        //     }
+        //     console.log(salaries);
+        //     var result = salaries.filter(checkSalary);
+        //     console.log(result);
+
+        //     function checkSalary(salary) {
+
+        //         return salary >= 50000;
+
+        //     }
+        // }
+
+        // function show() {
+        //     var myList = document.getElementById("myList");
+        //     var list = " ";
+
+        //     for (var items of salaries) {
+        //         list += `<li>${items} </li>`
+        //     }
+        //     myList.innerHTML = list;
+        // }
+
+    </script>
+</body>
+
+</html>

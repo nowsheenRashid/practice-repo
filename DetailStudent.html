@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    #container {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        display: block;
+    }
+</style>
+
+<body>
+
+    <h1>StudentInformation</h1>
+    <div id="container">
+        <label>RollNo</label><input type="text" id="rollNo" name="rollNo" placeholder="Enter rollno">
+        <label>Name</label><input type="text" id="Name" name="name" placeholder="Enter name">
+        <label>Marks</label><input type="text" id="Marks" name="Marks" placeholder="Enter marks">
+    </div>
+    <script>
+<<<<<<< Updated upstream
+        // var url = window.location;
+        // console.log(url)
+        // var search = window.location.search;
+        // console.log(search);
+
+
+
+        var url=window.location.search;
+        console.log(url);
+
+
+        //  var url = "DetailStudent.html?RollNo=101&Name=Nowsheen&Marks=800";
+        var rollno = url.substring(url.indexOf("=") + 1, url.indexOf("&"))
+        console.log(rollno);
+
+        var name = url.substring(url.indexOf("&") + 6, url.lastIndexOf("&"))
+        console.log(name);
+
+        var marks = url.substring(url.lastIndexOf("=") + 1);
+        console.log(marks)
+
+        var rollNo = document.getElementById('rollNo');
+        rollNo.value = rollno;
+
+        var Name = document.getElementById("Name");
+        Name.value = name;
+
+        var Marks = document.getElementById("Marks");
+        Marks.value = marks
+
+
+
+=======
+        var url= window.location.search;
+         console.log(url);
+        // var url =" DetailStudent.html?RollNo=102&Name=Sadia&Marks=900";
+        var rollno =url.substring(url.indexOf("=")+ 1,url.indexOf("&"));
+        // console.log(rollno);
+        var name =url.substring(url.indexOf("&")+ 6,url.lastIndexOf("&"));
+        // console.log(name);
+        var marks =url.substring(url.lastIndexOf("=")+ 1);
+        // console.log(marks);
+       var RollNo= document.getElementById("rollNo");
+       RollNo.value= rollno;
+
+       var Name= document.getElementById("Name");
+       Name.value= name;
+
+       var Marks= document.getElementById("Marks");
+       Marks.value= marks;
+>>>>>>> Stashed changes
+    </script>
+</body>
+
+</html>

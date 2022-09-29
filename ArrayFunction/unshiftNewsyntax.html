@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtNo" placeholder="Enter number">
+    <button onclick="addArray()">Add</button>
+    <button onclick="unshift()">unshift</button>
+    <button onclick="show()">show</button>
+    <ol id="mylist"></ol>
+    <script>
+        var array = [];
+        var txtNo = document.getElementById("txtNo");
+
+        function addArray() {
+            var result = txtNo.value;
+            console.log(result);
+            array.push(result);
+        }
+        function unshift() {
+            array.unshift("orange");
+            console.log(array);
+
+        }
+        function show() {
+            var mylist = document.getElementById("mylist");
+            var list = ' ';
+            for (var items of array) {
+                list += `<li>${items} </li>`
+            }
+            mylist.innerHTML = list;
+        }
+    </script>
+</body>
+
+</html>

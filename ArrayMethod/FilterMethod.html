@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                // var salarys = ["20000", "40000", "55000", "70000", "90000"];
+        // console.log(salarys);
+        // var result = salarys.filter(checkSalary);
+        // console.log(result);
+
+
+
+        // function checkSalary(salary) {
+        //     return salary >= 50000;
+
+        // } 
+
+        var salaries = [];
+        var size = prompt("enter size of array");
+
+        for (var i = 0; i < size; i++) {
+
+         
+            var num = prompt("Enter array value ");
+            salaries[i] = num;
+            console.log(salaries);
+        }
+        // for(var items of array){
+        //     console.log(items);
+        // }
+
+         var result = salaries.filter(checkSalary);
+         console.log("Filter array  :" +result);
+
+         function checkSalary(salary) {
+       
+          return salary >= 50000;
+
+         }
+
+
+    </script>
+</body>
+</html>

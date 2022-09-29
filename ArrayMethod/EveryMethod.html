@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     var arrays = [21,22, 45,56,];
+    //     console.log(arrays);
+    //   var result=   arrays.every(everyFun);
+    // //   console.log(result);
+    //   function everyFun(value){ 
+    //        return value >= 20;
+    //   }
+    //   console.log(result);
+    //   if(result){
+    //     console.log("Condition is true");
+
+    //   }
+    //   else{
+    //     console.log("Condition is false");
+    //   }
+
+
+
+var arrays = [];
+var size = prompt("Enter size");
+for(var i = 0; i < size; i++){
+  var vals=  prompt("Enter array value");
+  arrays[i] = vals;
+
+}
+console.log(arrays);
+    var  result=arrays.every(everyFun);
+console.log(result);
+function everyFun(value){
+    return value >= 20;
+}
+
+
+    </script>
+</body>
+</html>

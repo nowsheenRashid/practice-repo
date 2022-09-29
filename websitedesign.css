@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./css/images/at.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    font-family: sans-serif; 
+    height: 40vh;
+    width: 50vw;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgb(0, 0,0,0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+
+     position: absolute;
+    transform: translate(-50%,-50%);
+     box-sizing: border-box; 
+     padding: 70px 90px;
+}
+.avatar{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+ position: absolute;
+top: -50px;
+ left: calc(70% -60px); 
+ background-color:black;
+
+}
+.login-box h2{
+    text-align: center;
+    text-shadow: 5px 5px black;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+   
+}
+.user p{
+    /* margin: 0; */
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100px;
+
+}
+
+.user input{
+    width: 100%;
+    /* margin-bottom: 20px; */
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#lg{
+margin: 10px;
+padding: 15px;
+width: 120px;
+background-color:  #57578e;
+outline: none;
+color: aliceblue;
+font-size: 16px;
+border: none;
+
+}
+
+.user a:hover{
+    color: #460946;
+    text-decoration: none;
+    list-style: none;
+}
+.user #lg:hover{
+    background-color: #57578e ;
+    border-radius: 30px;
+}
+.user input:focus{
+background-color: #57578e ;
+border: none;
+outline: none;
+}
+

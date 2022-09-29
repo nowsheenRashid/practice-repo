@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #a2a2e6; */
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px white;
+    color: black
+
+}
+
+.left-box {
+    /* border: 2px solid blue; */
+    height: 400px;
+    width: 30%;
+    margin-left: 350px;
+    margin-top: 65px;
+    box-shadow: 2px 5px 10px;
+    background-color: white;
+}
+
+.left-box input {
+    padding: 10px;
+    margin: 8px;
+    display: block;
+    margin-left: 120px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    /* border-radius: 5px; */
+    font-family: sans-serif;
+    font-weight: 200;
+    border-bottom: 1px solid #aaa;
+    transition: 0.2s ease;
+
+
+}
+
+.left-box input[type="submit"] {
+    border-radius: 10px;
+    background-color: #c74a1d;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    margin-right: 55px;
+}
+
+.right-box {
+    /* border: 2px solid blue; */
+    height: 400px;
+    width: 30%;
+    background-image: linear-gradient(135deg,orange 50%,cyan);
+    margin-left: 850px;
+    margin-top: -400px;
+    box-shadow: 2px 5px 15px;
+    position: absolute;
+}
+
+.right-box button {
+    margin: 10px;
+    padding: 8px;
+    display: block;
+    /* border-radius: 10px; */
+    width: 50%;
+    margin-left: 99px;
+    color: #000;
+    font-size: 17px;
+}
+
+.right-box h2 {
+    text-align: center;
+    color: white;
+    /* margin: 5px; */
+}
+
+.right-box .btnfacebook {
+    background-color: navy;
+    color: white;
+    border: none;
+    /* margin: 5px; */
+}
+
+.right-box .btnTwitter {
+    background-color: #4682be;
+    color: white;
+    border: none;
+}
+
+.right-box .btnGoogle {
+    background-color: #d4592c;
+    color: white;
+    border: none;
+}

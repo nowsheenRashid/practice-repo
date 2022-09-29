@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var salaries = [2000, 5000, 3000, 7000, 6000];
+        // console.log(salaries);
+
+        // var Total = salaries.find(findTotal);
+        // console.log(Total);
+
+        // function findTotal(value, index) {
+        //     return value >= 6000;
+        // }
+        // using prompt
+        var salaries = [];
+        var size = prompt("Enter size");
+        for (var i = 0; i < size; i++) {
+            var salary = prompt("Enter salary");
+            salaries[i] = parseInt(salary)
+        }
+        console.log(salaries);
+
+          var total=salaries.find(findTotal);
+          console.log(total);
+
+          function findTotal(value,index){
+            return value >= 5000;
+          }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>'
+
+    <button type="btn" onclick="popfun()">Click</button>
+    <script>
+        // var arr = [10, 20, 30, 40, 50];
+
+        // console.log("Before pop :" + arr);
+        // arr.pop();
+        // console.log("After pop :" + arr);
+
+
+        // Using user input
+
+        // var numbers = [];
+        // var size = prompt("Enter size of array");
+        // for (var i = 0; i < size; i++) {
+        //     var value = prompt("Enter array value");
+        //     numbers[i] = value;
+        //     // console.log(numbers)
+        // }
+        //     numbers.pop();
+        //     console.log(numbers);
+        // for(var items of numbers){
+
+        //     console.log(items)
+        // }
+
+        // Using function
+        var numbers = [];
+        var size = prompt("Enter size of array");
+        for (var i = 0; i < size; i++) {
+            var value = prompt("Enter array value");
+            numbers[i] = value;
+             console.log(numbers)
+        }
+        function popfun(){
+            numbers.pop();
+            // console.log(numbers);
+        for(var items of numbers){
+
+            console.log(items)
+        }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

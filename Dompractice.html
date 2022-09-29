@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter any value" id="txtfirst">
+    <input type="text" placeholder="Enter any value" id="txtsecond">
+    <button id="btn" onclick="sum()">Add</button>
+
+    <div id="resultDiv"></div>
+
+    <script>
+        // var txtfirst = document.getElementById("txtfirst");
+        // txtfirst.style.backgroundColor = "yellow";
+        // txtfirst.style.color = "grey";
+        // txtfirst.style.height = "70px"
+        // txtfirst.style.width = "250px"
+        // var txtsecond = document.getElementById("txtsecond");
+        // txtsecond.style.backgroundColor = "teal"
+        // txtsecond.style.height = "70px";
+        // txtsecond.style.width = "250px"
+        // placeholder.style.color="red";
+function sum(){
+    let txtfirst = document.getElementById("txtfirst");
+        let txtsecond = document.getElementById("txtsecond");
+      let resultDiv=  document.getElementById("resultDiv");
+
+         let val1=  parseInt(txtfirst.value)
+          let val2=  parseInt( txtsecond.value)
+
+          let result = val1 + val2;
+          console.log(result);
+          resultDiv.innerText =result;
+}
+      
+    </script>
+</body>
+
+</html>

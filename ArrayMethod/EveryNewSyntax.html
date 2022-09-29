@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtNo" placeholder="Enter the number">
+    <button id="btn" onclick="everyFun()">AddEvery</button>
+    <button onclick="showEvery()">Show</button>
+    <ol id="myList"></ol>
+    <script>
+        var arrays = [];
+        console.log(arrays);
+        var txtNo = document.getElementById("txtNo");
+        function everyFun() {
+            var vals = txtNo.value
+            arrays.push(vals);
+            console.log(arrays);
+            
+
+            var result = arrays.every(isAvailable);
+            console.log(result);
+
+
+            function isAvailable(value) {
+                return value >= 25;
+
+            }
+
+        }
+        function showEvery() {
+            var mylist = document.getElementById("myList");
+            list = " ";
+            for (var items of arrays) {
+                list += `<li>${items} </li>`
+            }
+            mylist.innerHTML = list;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

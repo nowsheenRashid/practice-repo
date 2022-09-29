@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtNo" placeholder="Enter number">
+    <button onclick="AddMap()">Add</button>
+    <!-- <button onclick="show()">Show</button> -->
+    <button onclick="showAll()">ShowAll</button>
+    <!-- <button id="btn3" onclick="getLastName()">Show Last Name</button> -->
+    <p id="fName"></p>
+    <p id="lName"></p>
+    <p id="para"></p>
+    <script>
+        //     var obj = [
+        //         {fname:"Nowsheen", lname:"Rashid"},
+        //         {fname:"Muiz", lname:"Ashraf"},
+        //         {fname:"talha", lname:"Hilal"},
+        //     ];
+        //    var result=  obj.map(mapfun);
+        //    console.log(result);
+        //    function mapfun(value){
+        //     return  value.fname + " " +value. lname
+        //    }
+        var obj = [];
+        var txtNo = document.getElementById("txtNo");
+
+        function AddMap() {
+            var vals = txtNo.value
+            obj.push(vals);
+            console.log(obj);
+        }
+        // function show(){
+        // var result = obj.map(getName);
+        //     console.log(result);
+        // function getName(value) {
+        //         var name=value.split(" ");
+        //         return name;
+        //     }
+            
+            //document.getElementById("fName").innerHTML=result[0][0];
+        //}
+function showAll()
+{
+    //obj.map(value=> document.getElementById("para").innerHTML+=`<div>${value[0][0]}</div>`);  
+    obj.map(value=> document.getElementById("fName").innerHTML+=`<div>${value[0]}</div>`);
+    obj.map(value=> document.getElementById("lName").innerHTML+=`<div>${value[0]}</div>`);
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="Emailid" placeholder="Enter email"><br><br>
+
+    <input type="text" id="istdomain"><br><br>
+    <input type="text" id="istTopLevel"><br><br>
+    <input type="text" id="istname"><br><br>
+    <button onclick="start()">Add</button><br><br>
+    <script>
+        function start(){
+        var istmail = document.getElementById("Emailid");
+        var mail = istmail.value;
+
+        var domain = mail.substring(mail.indexOf("@") + 1, mail.indexOf("."));
+        var istdomain = document.getElementById("istdomain");
+        istdomain.value = domain;
+
+        var topleveldomain = mail.substring(mail.lastIndexOf(".") + 1);
+        var istTopLevel = document.getElementById('istTopLevel')
+        istTopLevel.value = topleveldomain;
+
+      var name=  mail.substring(0, mail.indexOf("@"));
+        var istname = document.getElementById("istname");
+        istname.value=name;
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtNo" placeholder="Enter number">
+    <button onclick="sliceAdd()">sliceAdd</button>
+    <button onclick="show()">show</button>
+    <button onclick="slice()">slice</button>
+    <ol id="mylist"></ol>
+    <script>
+
+// var array = "amir,saima,nowsheen";
+// console.log("before slice  "+array);
+//     var result= array.slice(11,);
+//   console.log("after slice  "+result);
+
+
+
+
+
+
+
+
+
+        var array = [];
+       var txtNo= document.getElementById("txtNo");
+       function sliceAdd(){
+          var result= txtNo.value;
+          console.log(result);
+          array.push(result);
+          txtNo.value = " ";
+          console.log(array);
+       }
+       function slice(){
+         array.slice(8,14);
+         console.log(array);
+       }
+       function show(){
+        var mylist= document.getElementById("mylist");
+        var list = " ";
+        for(var items of array){
+            list += `<li> ${items}</li>`
+        }
+        mylist.innerHTML = list;
+       }
+    </script>
+    
+</body>
+</html>

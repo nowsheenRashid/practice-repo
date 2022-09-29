@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="Emailid" placeholder="Enter email">
+   
+    <button onclick="start()">Add</button>
+    <script>
+function start(){
+    var Email = document.getElementById("Emailid").value;
+            // console.log(Email);
+          var domain=  Email.substring(Email.indexOf("@")+1, Email.indexOf("."));
+          console.log(domain);
+          var topLevelDomain = Email.substring(Email.lastIndexOf(".")+ 1);
+          console.log(topLevelDomain);
+          var name = Email.substring(0,Email.indexOf("@")) ;
+          console.log(name);
+}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function send() {
+        //     var Email = document.getElementById("txtEmail").value;
+        //     console.log(Email);
+            // var email = txtEmail.value;
+
+            // var domain = email.substring(email.indexOf("@") + 1, email.indexOf("."));
+            // var txtDomain = document.getElementById("txtDomain");
+            // // txtDomain.value = domain;
+
+            // var txttopleveldomain = document.getElementById("txttopleveldomain");
+            // var topleveldomain = email.substring(email.lastindexOf(".") + 1);
+            // txttopleveldomain.value = topleveldomain;
+
+            // var name = email.substring(0,email. indexOf("@"));
+            // var txtname = document.getElementById("txtname");
+            // txtname.value = name;
+        
+    //     var str = "lala@gmail.com";
+    //     console.log(str)
+    //    var  result= str.indexOf("@");
+    //    console.log(result)
+    //     var sub=str.substring(5,10);
+    //     console.log(sub)
+
+    </script>
+</body>
+
+</html>

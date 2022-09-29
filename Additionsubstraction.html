@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition substraction</title>
+</head>
+
+<body>
+    ist number:
+    <input type="number" placeholder="Enter number" id="firstbox"> <br><br>
+    second number:
+     <input type="number" placeholder="Enter number" id="secondbox"> <br> <br>
+    <button type="btn" onclick="myfunc()">addition</button>
+    <button type="btn" onclick="myfun()">Subtraction</button> <br> <br>
+    <button type="btn" onclick="myfunmulti()">Multiply</button>
+    <button type="btn" onclick="myfundiv()">Division</button>
+    <button type="btn" onclick="myfunmuodulus()">Modulus</button> <br> <br>
+    The result is: <br>
+
+    <div id="resultDiv">
+
+    </div>
+    <script>
+        function myfunc() {
+            var firstbox = document.getElementById('firstbox');
+            var secondbox = document.getElementById('secondbox');
+
+            var first = parseInt(firstbox.value);
+            var second = parseInt(secondbox.value);
+            resultDiv.innerHTML = first + second;
+            console.log(first + second)
+
+        }
+        function myfun() {
+            var firstbox = document.getElementById('firstbox');
+            var secondbox = document.getElementById('secondbox');
+
+            var first = (firstbox.value);
+            var second = (secondbox.value);
+            resultDiv.innerHTML = first - second;
+            console.log(first - second)
+        }
+
+        function myfunmulti() {
+            var firstbox = document.getElementById('firstbox');
+             var secondbox = document.getElementById('secondbox');
+
+            var first = (firstbox.value);
+            var second = (secondbox.value);
+            resultDiv.innerHTML = first * second;
+            console.log(first * second);
+        }
+
+        function myfundiv() {
+            var firstbox = document.getElementById('firstbox');
+             var secondbox = document.getElementById('secondbox');
+
+            var first = (firstbox.value);
+            var second = (secondbox.value);
+            resultDiv.innerHTML = first / second;
+            console.log(first / second);
+        }
+
+        function myfunmuodulus() {
+            var firstbox = document.getElementById('firstbox');
+             var secondbox = document.getElementById('secondbox');
+
+            var first = (firstbox.value);
+            var second = (secondbox.value);
+            resultDiv.innerHTML = first % second;
+            console.log(first % second);
+        }
+    </script>
+
+
+
+</body>
+
+</html>

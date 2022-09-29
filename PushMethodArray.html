@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="btn" onclick="myPushfun()">click</button>
+    <script>
+        //     var array = ["Arawh","Talha","Ibrahim","Zubair"];
+
+        //      array.push("muiz")
+        //  console.log(array);
+
+
+        // using user input
+
+        // var arr = [];
+        // var size = prompt("Enter size of array");
+        // for (var i = 0; i < size; i++) {
+        //     var vals = prompt("Enter array value");
+        //     arr[i] = vals;
+        // }
+        // arr.push(77);
+        // //  console.log(arr);
+
+        // for (var items of arr) {
+        //     console.log(items)
+        // }
+
+        //using function
+
+
+        var arr = [];
+        var size = prompt("Enter size of array");
+        for (var i = 0; i < size; i++) {
+            var vals = prompt("Enter array value");
+            arr[i] = vals;
+            // console.log(arr);
+        }
+        function myPushfun() {
+
+            arr.push(22);
+            for (var items of arr) {
+                console.log(items)
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
